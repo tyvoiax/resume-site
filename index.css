@@ -1,0 +1,290 @@
+/* root variables */
+:root {
+    --menu-icon-size: 1.5em;
+    --menu-icon-color: #fff;
+    --main-text-color: #2f3e56;
+    --main-line-height: 1.5;
+    --title-box-height: 100px;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--main-text-color);
+}
+
+
+/* Helper styles*/
+.clear-list-defaults {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.client-list i {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+}
+
+/* Styles for logo*/
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin: 0 5px;
+}
+
+
+/* Menu */
+.menu-container {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding: 30px;
+    line-height: 3em;
+    display: none;
+    background: #cc9b76;
+    color: #fff;
+}
+
+.nav-logo {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-logo span {
+    font-size: 1.5em;
+    color: var(--main-text-color);
+}
+
+.open-menu-icon {
+    flex-basis: 20%; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.open-menu-icon div {
+    height: 40px;
+    flex-basis: 40px;
+    background: #172566;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hamburger-menu-icon {
+    font-size: var(--menu-icon-size);
+    color: var(--menu-icon-color);
+}
+
+/* Heading styles */
+.heading {
+    background:  #172566 url('https://images.pexels.com/photos/210598/pexels-photo-210598.jpeg?auto=compress&cs=tinysrgb&h=350');
+    background-size: 100% 100%;
+   display: flex;
+   flex-direction: column;
+   padding: 50px 0 60px 0;
+}
+
+.image-container {
+    text-align: center;
+    height: 270px;
+}
+.image-container img {
+    width: 90%;
+    height: 100%;
+}
+.contact-container {
+    background: #fff;
+    color: var(--main-text-color);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contact-container ul  li {
+    margin: 20px;
+}
+.social-media-container {
+    background: #172566;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.social-media-list {
+    display: flex;
+}
+.social-media-list-item {
+    flex: 1;
+}
+.social-media-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 16px;
+}
+.social-media-container ul li {
+    display: flex;
+    justify-content: center;
+}
+.social-media-container ul a {
+    text-decoration: none;
+}
+.social-media-container ul a i {
+    color: #fff;
+}
+
+/* Styles for description */
+.description {
+    background: #eee;
+    padding: 20px 40px 40px 40px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.title {
+    color: var(--main-text-color);
+    text-align: center;
+    height: var(--title-box-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li p {
+    margin: 0;
+}
+
+.content {
+    line-height: var(--main-line-height);
+    padding-right: 40px;
+}
+
+/* Styles for experience */
+#experience {
+    border-bottom: 0.2px solid #eee;
+}
+#education, #clients {
+    border-top: 0.2px solid #eee;
+    border-bottom: 0.2px solid #eee;
+}
+
+/* Styles for clients */
+.client-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    padding: 0;
+    margin: 10px;
+}
+.client-list-item {
+    flex-basis: 50px;
+    width: 50px;
+    margin: 10px;
+}
+.client-list-item i {
+    align-items: center;
+    color: #918f8f;
+}
+
+/* Styles for skills */
+#skills {
+    background: #15225c;
+    color: #fff;
+    border-bottom: 0.2px solid #fff;
+}
+.skills-list {
+    background: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&h=350);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 0;
+}
+.skills-list-item {
+    background: rgba(255, 255, 255, 0.3);
+    flex-basis: 45px;
+    width: 300px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Expertise styles */
+#expertise {
+    border-bottom: 0.2px solid #eee;
+}
+.epertise-list {
+    padding: 20px 40px;
+}
+.epertise-list h5 {
+    margin: 0;
+
+}
+
+/* Contact styles */
+.contact-form {
+    background: #eee;
+}
+#contact-me {
+    border-bottom: 0.2px solid #fff;
+}
+
+form {
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    justify-content: space-between;
+}
+form > * {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+form > *:not(textarea) {
+    flex-basis: 45px;
+}
+form button {
+    background: #15225c;
+    color: #fff;
+}
+.contact-container {
+    background: inherit;  /*inherits its parent color*/
+    text-align: center;
+    border-bottom: 1px solid #999;
+}
+.contact-list-item {
+    padding-bottom: 15px;
+}
+.media-in-contact {
+    background: inherit;
+}
+.media-in-contact .social-media-list {
+    padding: 30px 0px;
+}
+.media-in-contact ul li a i {
+    color: #000;
+}
+
+footer {
+    height: 75px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
