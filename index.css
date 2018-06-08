@@ -55,7 +55,7 @@ body {
     display: none;
     background: #fff;
     color: #000;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
 }
