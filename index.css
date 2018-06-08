@@ -24,6 +24,11 @@ body {
     padding: 0;
     margin: 0;
 }
+.clear-anchor-defaults a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
 
 .client-list i {
     display: block;
@@ -46,11 +51,17 @@ body {
     width: 100vw;
     height: 100vh;
     text-align: center;
-    padding: 30px;
     line-height: 3em;
     display: none;
-    background: #cc9b76;
-    color: #fff;
+    background: #fff;
+    color: #000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.nav-menu-list-item {
+    display: flex;
+    justify-content: center;
 }
 
 .nav-logo {
@@ -83,6 +94,26 @@ body {
     font-size: var(--menu-icon-size);
     color: var(--menu-icon-color);
 }
+.close-menu-icon {
+    font-size: var(--menu-icon-size);
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 5px;
+}
+.close-menu-icon span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #999;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    
+}
+
 
 /* Heading styles */
 .heading {
