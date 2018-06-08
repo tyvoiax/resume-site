@@ -2,7 +2,7 @@
 :root {
     --menu-icon-size: 1.5em;
     --menu-icon-color: #fff;
-    --main-text-color: #2f3e56;
+    --main-text-color: #142e58;
     --main-line-height: 1.5;
     --title-box-height: 100px;
 }
@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--main-text-color);
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -100,11 +101,14 @@ body {
     width: 90%;
     height: 100%;
 }
-.contact-container {
+.heading .contact-container {
     background: #fff;
     color: var(--main-text-color);
     width: 90%;
     margin: 0 auto;
+    text-align: left;
+    padding: 10px 20px;
+    box-sizing: border-box;
 }
 
 .contact-container ul {
@@ -149,6 +153,7 @@ body {
     padding: 20px 40px 40px 40px;
     text-align: center;
     color: var(--main-text-color);
+    line-height: var(--main-line-height);
 }
 
 .title {
@@ -176,6 +181,14 @@ li p {
 #education, #clients {
     border-top: 0.2px solid #eee;
     border-bottom: 0.2px solid #eee;
+}
+
+ul li span:first-child {
+    font-weight: bold;
+}
+
+.make-bold {
+    font-weight: bold;
 }
 
 /* Styles for clients */
