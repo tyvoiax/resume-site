@@ -39,6 +39,7 @@ body {
 
 /* Styles for logo*/
 .navigation {
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     height: 100px;
@@ -248,8 +249,11 @@ ul li span:first-child {
     color: #fff;
     border-bottom: 0.2px solid #fff;
 }
+.skills-container {
+    background: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&h=350) no-repeat;
+    background-size: 100%;
+}
 .skills-list {
-    background: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&h=350);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -332,3 +336,278 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+/* Styles for big screens*/
+@media screen and (min-width: 768px) {
+
+    /* Navigation */
+    .navigation {
+        display: flex;
+        align-items: baseline;
+    }
+    .menu-container {
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-end;
+        background: rgba(0, 0, 0, 0);
+        position: relative;
+        height: 100%;
+        flex: 1 1 68%;
+        font-size: 0.8em;
+    }
+    .open-menu-icon, .close-menu-icon {
+        display: none;
+    }
+    .nav-logo {
+        flex: 1 1 32%;
+        justify-content: flex-start;
+    }
+    .nav-menu {
+        flex: 0 1 800px;
+    }
+    .nav-menu-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-menu-list-item a{
+        color: var(--main-text-color);
+    }
+
+    /* wrap all content in a container*/
+    .wrapper {
+        width: 940px;
+        margin: 0 auto;
+        position: relative;
+    }
+    /* All titles should stay in-place */
+    .title {
+        position: relative;
+    }
+    /* Header*/
+    .heading {
+        box-sizing: border-box;
+        padding-top: 100px;
+        padding-bottom: 0px;
+        /* flex-direction: row; */
+        height: 570px;
+    }
+    /* Flex container*/
+    .heading-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* Flex item */
+    .image-container {
+        flex-basis: 470px;
+        height: 470px;
+    }
+    .image-container img {
+        width: 100%;
+        height: 100%;;
+    }
+    .heading .contact-container {
+        flex-basis: 470px;
+        height: 470px;
+        margin: 0;
+    }
+    .social-media-container {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-media-list {
+        /* max-width: 50%;  same as using flex-basis */ 
+        flex: 0 1 30%;
+        font-size: 1.4em;
+    }
+
+    /* Description*/
+    .description {
+        display: flex;
+        height: 475px;
+        justify-content: center;
+        align-items: center;
+    }
+    .description-wrapper {
+        box-sizing: border-box;
+        padding: 40px 20%;
+    }
+
+    /* Experience*/
+    .experience-wrapper {
+        padding: 60px;
+        height: 600px;
+    }
+    .experience-list, .education-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Line and the 3 dots*/
+    .line-dot-wrapper {
+        position: absolute;
+        left: 49%;
+    }
+    .divider {
+        width: 1px;
+        height: 432px;
+        background: #ccc;
+    }
+    .dot {
+        width: 6px;
+        height: 6px;
+        background: #000;
+        border-radius: 50%;
+        position: absolute;
+    }
+    .dot1 {
+        top: 0px;
+        left: -3px;
+    }
+    .dot2 {
+        top: 200px;
+        left: -3px;
+    }
+    .dot3 {
+        top: 400px;
+        left: -3px;
+    }
+
+    /* position items on the left and right sides of the line*/
+    .item {
+        position: absolute;
+    }
+    .left {
+        left: 30%;
+        text-align: right;
+        width: 150px;
+    }
+    .right {
+        right: 8%;
+        width: 400px;
+    }
+    .top {
+        top: 54px;
+    }
+    .mid {
+        top: 254px;
+    }
+    .down {
+        top: 454px;
+    }
+   
+    /* Education*/
+    .education-wrapper {
+        padding: 60px;
+        height: 600px;
+    }
+
+    /* Clients */
+    .client-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 200px;
+    }
+   /* Skills */
+   .skills-list {
+       flex-flow: row wrap;
+       justify-content: space-between;
+       height: 380px;
+       box-sizing: border-box;
+       padding: 40px 0px;
+   }
+   .skills-list-item {
+       flex-basis: 415px;
+       margin: 0px;
+       height: 77px;
+   }
+
+   /* Expertise */
+   .epertise-list {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       height: 320px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   .expertise-list-item {
+       flex-basis: 30%;
+   }
+
+   /* Contact */
+
+
+    
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+    }
+    form {
+        margin: 0;
+        grid-column: 1 / 5;
+        box-sizing: border-box;
+        padding: 50px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .contact-divider {
+        width: 1px;
+        /* height: 432px; */
+        background: #fff;
+        /* position: absolute;
+        top: 0px;
+        left: 50%; */
+        grid-column: 5 / 6;
+        grid-row: 1 / 6;
+        justify-self: center;
+    }
+    .contact-media {
+        grid-column: 6 / 9;
+        justify-self: start;
+        box-sizing: border-box;
+        padding: 50px 0;
+        justify-self: stretch;
+    }
+
+    input[placeholder="Name"] {
+        grid-column: 1 / 2;
+    }
+    input[placeholder="Email"] {
+        grid-column: 2 / 3;
+    }
+    input[placeholder="Subject"] {
+        grid-column: 1 / 3;
+    }
+    textarea[placeholder="Message"] {
+        grid-column: 1 / 3;
+    }
+    form button {
+        grid-column: 1 / 3;
+    }
+
+    /* Contact container */
+    .contact-container {
+        text-align: left;
+    }
+    .media-in-contact {
+        justify-content: flex-start;
+    }
+    .contact-form .social-media-list {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        flex: 0 1 80%;
+        justify-content: flex-start;
+    }
+    .contact-form .social-media-list-item {
+        justify-content: flex-start;
+    }
+}
+
