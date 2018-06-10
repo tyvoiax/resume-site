@@ -344,6 +344,12 @@ footer {
     .navigation {
         display: flex;
         align-items: baseline;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        background: #fff;
+        z-index: 1;
+        margin: 0;
     }
     .menu-container {
         display: flex !important;
@@ -361,6 +367,7 @@ footer {
     .nav-logo {
         flex: 1 1 32%;
         justify-content: flex-start;
+        padding-left: 20px;
     }
     .nav-menu {
         flex: 0 1 800px;
@@ -432,8 +439,12 @@ footer {
     }
     .description-wrapper {
         box-sizing: border-box;
-        padding: 40px 20%;
-    }
+        padding: 40px 200px;
+        /* height: 100%;
+        flex: 0 1 940px;
+        display: flex;
+        flex-direction: column;*/
+    } 
 
     /* Experience*/
     .experience-wrapper {
