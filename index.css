@@ -75,6 +75,9 @@ body {
     font-size: 1.5em;
     color: var(--main-text-color);
 }
+.nav-logo span a {
+    color: var(--main-text-color);
+}
 
 .open-menu-icon {
     flex-basis: 20%; 
