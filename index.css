@@ -158,6 +158,10 @@ body {
     background: #172566;
     width: 90%;
     margin: 0 auto;
+    height: 50px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
 }
 
 .social-media-list {
@@ -169,7 +173,8 @@ body {
 .social-media-container ul {
     list-style-type: none;
     padding: 0;
-    margin: 16px;
+    margin: 0;
+    flex: 1;
 }
 .social-media-container ul li {
     display: flex;
@@ -341,7 +346,7 @@ footer {
 }
 
 /* Styles for big screens*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
     /* Navigation */
     .navigation {
